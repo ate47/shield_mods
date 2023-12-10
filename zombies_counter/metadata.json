@@ -1,0 +1,21 @@
+{
+    "name": "Zombies Counter",
+    "data": [
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/zm_common/zombies_counter.gsc",
+            "path": "compiled.gscc",
+            "hooks": [
+                "scripts/zm_common/load.gsc"
+            ]
+        },
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/zm_common/zombies_counter.csc",
+            "path": "compiled.cscc",
+            "hooks": [
+                "scripts/zm_common/load.csc"
+            ]
+        }
+    ]
+}

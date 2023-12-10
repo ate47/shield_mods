@@ -1,0 +1,10 @@
+*.zip
+*.gsic
+*.gscc
+*.csic
+*.cscc
+*.omap
+hashes.txt
+gsc.conf
+
+.vscode

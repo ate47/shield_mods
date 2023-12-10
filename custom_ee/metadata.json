@@ -1,0 +1,21 @@
+{
+    "name": "Custom EEs",
+    "data": [
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/shield/custom_ee/custom_ee.gsc",
+            "path": "compiled.gsic",
+            "hooks": [
+                "scripts/zm_common/zm_utility.gsc"
+            ]
+        },
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/shield/custom_ee/custom_ee.csc",
+            "path": "compiled.csic",
+            "hooks": [
+                "scripts/zm_common/zm_utility.csc"
+            ]
+        }
+    ]
+}

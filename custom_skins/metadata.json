@@ -1,0 +1,29 @@
+{
+    "name": "Custom skins",
+    "data": [
+        {
+            "type": "stringtable",
+            "name": "gamedata/shield/customskins/camos.csv",
+            "path": "configs/camos.csv"
+        },
+        {
+            "type": "stringtable",
+            "name": "gamedata/shield/customskins/character_ids.csv",
+            "path": "configs/character_ids.csv"
+        },
+        {
+            "type": "stringtable",
+            "name": "gamedata/shield/customskins/skins.csv",
+            "path": "configs/skins.csv"
+        },
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/shield/customskins.gsc",
+            "path": "compiled.gscc",
+            "hooks": [
+                "scripts/mp_common/bb.gsc",
+                "scripts/zm_common/load.gsc"
+            ]
+        }
+    ]
+}
