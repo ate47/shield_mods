@@ -1,0 +1,21 @@
+{
+    "name": "Lua test",
+    "data": [
+        {
+            "type": "luafile",
+            "name": "ui/shield/testhud",
+            "path": "test.luac",
+            "hooks_post": [
+                "x64:2b23cf5ef446c848"
+            ]
+        },
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/shield/test_lua.gsc",
+            "path": "compiled.gscc",
+            "hooks": [
+                "scripts/zm_common/load.gsc"
+            ]
+        }
+    ]
+}

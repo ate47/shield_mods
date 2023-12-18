@@ -6,7 +6,7 @@
 
 
 autoexec __init__system__() {
-	system::register("shield_custom_camos", &__init__, undefined, undefined);
+	system::register(#"shield_custom_camos", &__init__, undefined, undefined);
 }
 
 __init__() {

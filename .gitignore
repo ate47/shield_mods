@@ -4,6 +4,8 @@
 *.csic
 *.cscc
 *.omap
+*.luac
+*.dec.lua
 hashes.txt
 gsc.conf
 
