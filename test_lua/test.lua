@@ -62,6 +62,7 @@ LUI.createMenu["T7Hud_" .. Engine[@"getcurrentmap"]()] = function ( controller )
       notf.lines = {}
       notf.linesDataStart = 0
       notf.linesDataSize = 0
+      notf.currentCombo = 0
       for i=1,15 do
             notf.linesData[i] = ""
             local elem = LUI.UIText.new(0.5, 0, 64, 0, 0.5, 0.5, 20 + (i - 1) * 30, 50 + (i - 1) * 30)
@@ -85,24 +86,28 @@ LUI.createMenu["T7Hud_" .. Engine[@"getcurrentmap"]()] = function ( controller )
                         else
                               notf.linesDataSize = notf.linesDataSize + 1
                         end
+                        notf.currentCombo = notf.currentCombo + scriptData[2]
 
                         notf.linesData[(notf.linesDataStart + notf.linesDataSize - 1) % #notf.linesData + 1] = "+ " .. tostring(scriptData[2])
 
+                        notf.lines[1]:setText(notf.linesData[(notf.linesDataStart + notf.linesDataSize - 1) % #notf.linesData + 1] .. " ^7(+" .. tostring(notf.currentCombo) .. ")")
                         -- update lines
-                        for i=1,notf.linesDataSize do
-                              (notf.lines[i]):setText(notf.linesData[(notf.linesDataStart + i - 1) % #notf.linesData + 1])
+                        for i=2,notf.linesDataSize do
+                              notf.lines[i]:setText(notf.linesData[(notf.linesDataStart + (notf.linesDataSize - i)) % #notf.linesData + 1])
                         end
                   elseif scriptData[1] == 2 then
                         -- set only reduce
+                        notf.currentCombo = 0;
                         first:setText("^1- " .. tostring(scriptData[2]))
                         for i=2,#notf.lines do
-                              (notf.lines[i]):setText("")
+                              notf.lines[i]:setText("")
                         end
                         notf.linesDataSize = 0
                   elseif scriptData[1] == 0 then
+                        notf.currentCombo = 0;
                         -- reset all
                         for i=1,#notf.lines do
-                              (notf.lines[i]):setText("")
+                              notf.lines[i]:setText("")
                         end
                         notf.linesDataSize = 0
                   end

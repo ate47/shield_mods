@@ -5,9 +5,10 @@
 #namespace testlua;
 
 autoexec __init_system__() {
-    // 26 = lua event
-    precacheresource(26, #"testlua_update_counter");
-    precacheresource(26, #"testlua_points");
+    // only working in solo for now
+    precache("eventstring", #"testlua_update_counter");
+    precache("eventstring", #"testlua_points");
+    ShieldLog("Precache done");
 
 	system::register(#"test_lua", &__init__, &__post_init__, undefined);
 }
