@@ -5,11 +5,6 @@
 #namespace testlua;
 
 autoexec __init_system__() {
-    // only working in solo for now
-    precache("eventstring", #"testlua_update_counter");
-    precache("eventstring", #"testlua_points");
-    ShieldLog("Precache done");
-
 	system::register(#"test_lua", &__init__, &__post_init__, undefined);
 }
 __init__() {

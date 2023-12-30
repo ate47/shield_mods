@@ -16,6 +16,28 @@
             "hooks": [
                 "scripts/zm_common/load.gsc"
             ]
+        },
+        {
+            "type": "stringtable",
+            "name": "gamedata/shield/custom_errors.csv",
+            "path": "error.tsv",
+            "separator": "\t"
+        }
+    ],
+    "cache": [
+        {
+            "type": "eventstring",
+            "name": "testlua_points",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "eventstring",
+            "name": "testlua_update_counter",
+            "mode": [
+                "zm"
+            ]
         }
     ]
 }
