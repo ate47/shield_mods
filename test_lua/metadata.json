@@ -22,6 +22,11 @@
             "name": "gamedata/shield/custom_errors.csv",
             "path": "error.tsv",
             "separator": "\t"
+        },
+        {
+            "type": "localizeentry",
+            "name": "shield/custom_message_test",
+            "value": "test lua mod loaded"
         }
     ],
     "cache": [
@@ -35,6 +40,13 @@
         {
             "type": "eventstring",
             "name": "testlua_update_counter",
+            "mode": [
+                "zm"
+            ]
+        },
+        {
+            "type": "string",
+            "name": "shield/custom_message_test",
             "mode": [
                 "zm"
             ]

@@ -57,6 +57,10 @@ onPlayerSpawned() {
     self endon(#"disconnect", #"spawned_player");
     level endon(#"end_game", #"game_ended");
 
+    wait 10;
+
+    self iprintln(#"shield/custom_message_test");
+
     for (;;) {
         result = undefined;
         result = self waittilltimeout(2, #"earned_points", #"spent_points");
