@@ -10,6 +10,14 @@
             ]
         },
         {
+            "type": "luafile",
+            "name": "ui/shield/testmenu",
+            "path": "test_menu.luac",
+            "hooks_post": [
+                "x64:1deae7175e472451"
+            ]
+        },
+        {
             "type": "scriptparsetree",
             "name": "scripts/shield/test_lua.gsc",
             "path": "compiled.gscc",
@@ -27,6 +35,46 @@
             "type": "localizeentry",
             "name": "shield/custom_message_test",
             "value": "test lua mod loaded"
+        },
+        {
+            "type": "localizeentry",
+            "name": "menu/arena",
+            "value": "^1K^2i^3d^4d^5o^6s"
+        },
+        {
+            "type": "localizeentry",
+            "name": "menu/zombies",
+            "value": "^1Blundell of the Dead"
+        },
+        {
+            "type": "localizeentry",
+            "name": "menu/warzone",
+            "value": "^2PUBG"
+        },
+        {
+            "type": "localizeentry",
+            "name": "menu/multiplayer",
+            "value": "^3Overwatch of duty"
+        },
+        {
+            "type": "localizeentry",
+            "name": "menu/theater",
+            "value": "^4Kino"
+        },
+        {
+            "type": "localizeentry",
+            "name": "menu/store",
+            "value": "^5Mama's hell"
+        },
+        {
+            "type": "localizeentry",
+            "name": "hash_4191cdda584b4408",
+            "value": "^5Mama's hell"
+        },
+        {
+            "type": "localizeentry",
+            "name": "hash_229c903c6df90d6f",
+            "value": "^5Li's place"
         }
     ],
     "cache": [
