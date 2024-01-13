@@ -1,0 +1,14 @@
+{
+    "name": "test cfg",
+    "data": [
+        {
+            "type": "scriptparsetree",
+            "name": "scripts/shield/test_config.gsc",
+            "path": "compiled.gscc",
+            "hooks": [
+                "scripts/mp_common/bb.gsc",
+                "scripts/zm_common/load.gsc"
+            ]
+        }
+    ]
+}
